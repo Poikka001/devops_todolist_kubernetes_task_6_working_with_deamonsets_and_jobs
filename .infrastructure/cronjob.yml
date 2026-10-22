@@ -18,7 +18,7 @@ spec:
               command:
                 - /bin/sh
                 - -c
-                - "curl -sS http://cluster.local"
+                - "curl -sS http://cluster.local/api/health; sleep 240"
               resources:
                 requests:
                   cpu: 50m
