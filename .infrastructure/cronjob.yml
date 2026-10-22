@@ -14,11 +14,11 @@ spec:
         spec:
           containers:
             - name: curl
-              image: ikulyk404/busyboxplus:curl
+              image: busyboxplus:curl
               command:
                 - /bin/sh
                 - -c
-                - "curl -sS http://todoapp.todoapp.svc.cluster.local:8080/api/health"
+                - "curl -sS http://cluster.local"
               resources:
                 requests:
                   cpu: 50m
